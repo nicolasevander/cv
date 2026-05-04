@@ -27,6 +27,7 @@ const PROFILE = {
 const EXPERIENCES = [
   {
     company: "Kredivo Group",
+    logo: "https://logo.clearbit.com/kredivo.com",
     role: "Lead QA Engineer",
     period: "Apr 2025 – Present",
     tenure: null,
@@ -37,9 +38,14 @@ const EXPERIENCES = [
       "Standardized QA processes, improved API/client security, and introduced mock server implementation.",
     ],
     skills: ["Karate", "Locust", "K6", "Java", "API Testing"],
+    links: [
+      { label: "Kredivo Thailand", url: "https://kredivo.co.th/en/" },
+      { label: "Kredivo Philippines", url: "https://kredivo.com.ph/" },
+    ],
   },
   {
     company: "Kredivo Group",
+    logo: "https://logo.clearbit.com/kredivo.com",
     role: "Senior QA Engineer",
     period: "Oct 2023 – May 2025",
     tenure: null,
@@ -54,6 +60,7 @@ const EXPERIENCES = [
   },
   {
     company: "Kredivo Group",
+    logo: "https://logo.clearbit.com/kredivo.com",
     role: "QA Engineer",
     period: "Dec 2021 – Oct 2023",
     tenure: "Total Kredivo tenure: 4 years 5 months",
@@ -65,9 +72,13 @@ const EXPERIENCES = [
       "Collaborated across teams to maintain high-quality standards and improve testing processes.",
     ],
     skills: ["BDD", "API Testing", "Test Planning", "Java"],
+    links: [
+      { label: "Timo Vietnam Pay Later", url: "https://timo.vn/en/pay-later/" },
+    ],
   },
   {
     company: "PT. Sumber Alfaria Trijaya (Alfamart)",
+    logo: "https://logo.clearbit.com/alfamart.co.id",
     role: "Quality Assurance Analyst",
     period: "Nov 2020 – Dec 2021",
     tenure: null,
@@ -82,6 +93,7 @@ const EXPERIENCES = [
   },
   {
     company: "PT. Sumber Alfaria Trijaya (Alfamart)",
+    logo: "https://logo.clearbit.com/alfamart.co.id",
     role: "Quality Assurance Analyst Intern",
     period: "Jan 2020 – Nov 2020",
     tenure: null,
@@ -372,9 +384,21 @@ function ExperienceCard({ exp, index }) {
         )}
       </div>
       <div>
-        <h3 style={{ margin: "0 0 4px", fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: PALETTE.text }}>
-          {exp.role}
-        </h3>
+        <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 4 }}>
+          {exp.logo && (
+            <img
+              src={exp.logo}
+              alt={exp.company}
+              width={28}
+              height={28}
+              style={{ borderRadius: 6, objectFit: "contain", background: "#fff", padding: 2 }}
+              onError={(e) => { e.currentTarget.style.display = "none"; }}
+            />
+          )}
+          <h3 style={{ margin: 0, fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: PALETTE.text }}>
+            {exp.role}
+          </h3>
+        </div>
         <span style={{
           fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: PALETTE.accent,
           display: "inline-block", marginBottom: 16,
@@ -390,6 +414,21 @@ function ExperienceCard({ exp, index }) {
         <div style={{ marginTop: 16, display: "flex", flexWrap: "wrap" }}>
           {exp.skills.map((s) => <Badge key={s}>{s}</Badge>)}
         </div>
+        {exp.links && exp.links.length > 0 && (
+          <div style={{ marginTop: 14, display: "flex", flexWrap: "wrap", gap: 8 }}>
+            {exp.links.map((link) => (
+              <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" style={{
+                fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: PALETTE.textMuted,
+                textDecoration: "none", padding: "5px 12px",
+                border: `1px solid ${PALETTE.border}`, borderRadius: 4,
+                transition: "all 0.25s",
+              }}
+                onMouseOver={(e) => { e.currentTarget.style.borderColor = PALETTE.accent; e.currentTarget.style.color = PALETTE.accent; }}
+                onMouseOut={(e) => { e.currentTarget.style.borderColor = PALETTE.border; e.currentTarget.style.color = PALETTE.textMuted; }}
+              >{link.label} ↗</a>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
