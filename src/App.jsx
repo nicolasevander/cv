@@ -21,19 +21,19 @@ const PROFILE = {
   location: "Jakarta, Indonesia",
   linkedin: "https://linkedin.com/in/nicolasevander",
   about:
-    "Software Quality Assurance Engineer with 5+ years of experience in the information technology and services industry. Skilled in Java, test automation, API testing, and performance testing. Experienced in leading QA teams for international markets across Indonesia, Philippines, and Thailand. Strong engineering professional with a Bachelor's degree in Information Systems from Universitas Kristen Satya Wacana.",
+    "Software Quality Assurance Engineer with 5+ years of experience in the information technology and services industry. Skilled in Java, test automation, API testing, and performance testing. Experienced in leading QA teams for international markets across Indonesia, Philippines, Vietnam and Thailand. Strong engineering professional with a Bachelor's degree in Information Systems from Universitas Kristen Satya Wacana.",
 };
 
 const EXPERIENCES = [
   {
     company: "Kredivo Group",
-    logo: "https://logo.clearbit.com/kredivo.com",
+    logo: "https://i0.wp.com/kredivo.id/wp-content/uploads/2023/02/Kredivo-logo.png?fit=1538%2C524&ssl=1",
     role: "Lead QA Engineer",
     period: "Apr 2025 – Present",
     tenure: null,
     bullets: [
       "Led QA for B2B Kredivo International Squad, covering Indonesia, Philippines, and Thailand across backend and frontend.",
-      "Managed 6 partner integrations including Oppo, Lazada, TikTok, Vivo, and B2C clients in Philippines & Thailand.",
+      "Managed 6 partner integrations including Oppo, Lazada, TikTok, Vivo, and B2C clients in Philippines, Vietnam & Thailand.",
       "Drove automation using Karate framework, and executed performance tests with Locust and K6.",
       "Standardized QA processes, improved API/client security, and introduced mock server implementation.",
     ],
@@ -41,11 +41,12 @@ const EXPERIENCES = [
     links: [
       { label: "Kredivo Thailand", url: "https://kredivo.co.th/en/" },
       { label: "Kredivo Philippines", url: "https://kredivo.com.ph/" },
+      { label: "Timo Vietnam Pay Later", url: "https://timo.vn/en/pay-later/" }
     ],
   },
   {
     company: "Kredivo Group",
-    logo: "https://logo.clearbit.com/kredivo.com",
+    logo: "https://i0.wp.com/kredivo.id/wp-content/uploads/2023/02/Kredivo-logo.png?fit=1538%2C524&ssl=1",
     role: "Senior QA Engineer",
     period: "Oct 2023 – May 2025",
     tenure: null,
@@ -60,7 +61,7 @@ const EXPERIENCES = [
   },
   {
     company: "Kredivo Group",
-    logo: "https://logo.clearbit.com/kredivo.com",
+    logo: "https://i0.wp.com/kredivo.id/wp-content/uploads/2023/02/Kredivo-logo.png?fit=1538%2C524&ssl=1",
     role: "QA Engineer",
     period: "Dec 2021 – Oct 2023",
     tenure: "Total Kredivo tenure: 4 years 5 months",
@@ -72,13 +73,10 @@ const EXPERIENCES = [
       "Collaborated across teams to maintain high-quality standards and improve testing processes.",
     ],
     skills: ["BDD", "API Testing", "Test Planning", "Java"],
-    links: [
-      { label: "Timo Vietnam Pay Later", url: "https://timo.vn/en/pay-later/" },
-    ],
   },
   {
     company: "PT. Sumber Alfaria Trijaya (Alfamart)",
-    logo: "https://logo.clearbit.com/alfamart.co.id",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/9e/ALFAMART_LOGO_BARU.png",
     role: "Quality Assurance Analyst",
     period: "Nov 2020 – Dec 2021",
     tenure: null,
@@ -93,7 +91,7 @@ const EXPERIENCES = [
   },
   {
     company: "PT. Sumber Alfaria Trijaya (Alfamart)",
-    logo: "https://logo.clearbit.com/alfamart.co.id",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/9e/ALFAMART_LOGO_BARU.png",
     role: "Quality Assurance Analyst Intern",
     period: "Jan 2020 – Nov 2020",
     tenure: null,
@@ -107,26 +105,33 @@ const EXPERIENCES = [
 ];
 
 const SKILLS = [
-  { category: "Testing", items: ["Manual Testing", "Automation Testing", "Performance Testing", "API Testing", "BDD", "Test Planning", "Agile/Scrum"] },
-  { category: "Automation & Perf", items: ["Karate", "Selenium", "REST Assured", "Telenium", "Locust", "K6", "JMeter"] },
-  { category: "Languages", items: ["Java", "Python", "HTML", "CSS"] },
+  { category: "Testing", items: ["Manual Testing", "Automation Testing", "Performance Testing", "API Testing", "BDD", "Test Planning", "Shift Left Testing", "Mobile Testing", "Basic Security Testing", "Agile/Scrum"] },
+  { category: "Frameworks", items: ["Appium", "Selenium", "Telenium", "REST Assured", "Karate", "Locust", "K6", "JMeter"] },
+  { category: "Languages", items: ["Java", "Python"] },
   { category: "Applications", items: ["Postman", "PyCharm", "IntelliJ IDEA", "VS Code", "TestRail", "UIPath", "Katalon Studio"] },
-  { category: "Databases", items: ["MySQL", "PostgreSQL", "SQL Server", "Oracle", "SQLite"] },
+  { category: "Databases/Querying", items: ["SQL (PostgreSQL, MySQL)", "NoSQL"] },
   { category: "Management", items: ["JIRA", "Git", "Slack", "Spreadsheet"] },
 ];
 
 const EDUCATION = [
   {
+    logo: "https://upload.wikimedia.org/wikipedia/id/thumb/0/05/UKSW.svg/330px-UKSW.svg.png",
     school: "Universitas Kristen Satya Wacana",
-    degree: "Bachelor of Information Systems",
+    degree: "Bachelor's Degree, Information Systems",
     period: "2016 – 2020",
+    gpa: "3.93",
+    activities: "University Student Senate",
+    description: "As an Information Systems student, I developed a strong foundation bridging business and technology — learning to translate organizational needs into technical systems, analyze and redesign business workflows for operational efficiency, and evaluate IT management practices to deliver actionable improvement recommendations.",
   },
 ];
 
 const CERTIFICATIONS = ["Oracle Database 11g Administrator Certified Associate"];
 
 const PUBLICATIONS = [
-  "Rancang Bangun Sistem Informasi Geografis Rekomendasi Cagar Budaya Menggunakan Metode Analytic Hierarchy Process",
+  {
+    title: "Rancang Bangun Sistem Informasi Geografis Rekomendasi Cagar Budaya Menggunakan Metode Analytic Hierarchy Process",
+    url: "https://journal.maranatha.edu/index.php/jutisi/article/view/2593",
+  },
 ];
 
 function useInView(threshold = 0.15) {
@@ -389,9 +394,7 @@ function ExperienceCard({ exp, index }) {
             <img
               src={exp.logo}
               alt={exp.company}
-              width={28}
-              height={28}
-              style={{ borderRadius: 6, objectFit: "contain", background: "#fff", padding: 2 }}
+              style={{ height: 28, width: "auto", maxWidth: 80, borderRadius: 6, objectFit: "contain", background: "#fff", padding: "2px 6px" }}
               onError={(e) => { e.currentTarget.style.display = "none"; }}
             />
           )}
@@ -445,15 +448,43 @@ function Experience() {
           textTransform: "uppercase", letterSpacing: 2, marginBottom: 24,
         }}>Education</h3>
         {EDUCATION.map((ed, i) => (
-          <div key={i} style={{
-            display: "flex", justifyContent: "space-between", alignItems: "baseline",
-            padding: "12px 0", borderBottom: `1px solid ${PALETTE.border}`,
-          }} className="edu-row">
-            <div>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: PALETTE.text, fontWeight: 600 }}>{ed.school}</span>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: PALETTE.textMuted, marginLeft: 12 }}>{ed.degree}</span>
+          <div key={i} style={{ padding: "20px 0", borderBottom: `1px solid ${PALETTE.border}` }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }} className="edu-row">
+              <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                {ed.logo && (
+                  <img
+                    src={ed.logo}
+                    alt={ed.school}
+                    style={{ height: 28, width: "auto", maxWidth: 80, borderRadius: 6, objectFit: "contain", background: "#fff", padding: "2px 6px" }}
+                    onError={(e) => { e.currentTarget.style.display = "none"; }}
+                  />
+                )}
+                <div>
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: PALETTE.text, fontWeight: 600 }}>{ed.school}</span>
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: PALETTE.textMuted, marginLeft: 12 }}>{ed.degree}</span>
+                </div>
+              </div>
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: PALETTE.textMuted }}>{ed.period}</span>
             </div>
-            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: PALETTE.textMuted }}>{ed.period}</span>
+            {(ed.gpa || ed.activities) && (
+              <div style={{ display: "flex", gap: 20, marginTop: 8, marginLeft: 0 }}>
+                {ed.gpa && (
+                  <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: PALETTE.accent }}>
+                    GPA: {ed.gpa}
+                  </span>
+                )}
+                {ed.activities && (
+                  <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: PALETTE.textMuted }}>
+                    Activities: {ed.activities}
+                  </span>
+                )}
+              </div>
+            )}
+            {ed.description && (
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: PALETTE.textMuted, lineHeight: 1.7, margin: "10px 0 0" }}>
+                {ed.description}
+              </p>
+            )}
           </div>
         ))}
       </div>
@@ -532,7 +563,14 @@ function Credentials() {
               borderBottom: `1px solid ${PALETTE.border}`,
             }}>
               <span style={{ color: PALETTE.accent, fontSize: 16, lineHeight: 1 }}>◆</span>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: PALETTE.text, lineHeight: 1.5, fontStyle: "italic" }}>{p}</span>
+              <a href={p.url} target="_blank" rel="noopener noreferrer" style={{
+                fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: PALETTE.text,
+                lineHeight: 1.5, fontStyle: "italic", textDecoration: "none",
+                transition: "color 0.25s",
+              }}
+                onMouseOver={(e) => { e.currentTarget.style.color = PALETTE.accent; }}
+                onMouseOut={(e) => { e.currentTarget.style.color = PALETTE.text; }}
+              >{p.title} ↗</a>
             </div>
           ))}
         </div>
